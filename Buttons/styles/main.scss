@@ -1,0 +1,104 @@
+// Variables
+
+//color
+$default-background: #3b3b55;
+$default-background-hover:#4e4e66;
+$default-background-active: #111119;
+$green-background: darkgreen;
+$green-background-hover: green;
+$green-background-active: #003300;
+$yellow-background: #cccc00;
+$yellow-background-hover: #7f7f00;
+$yellow-background-active:  #e5e500;
+$red-background: darkred;
+$red-background-hover: #660000;
+$red-background-active: #FF0000;
+
+//font-size
+$small-font: 11px;
+$medium-font: 20px;
+$large-font: 40px;
+
+//border
+
+$border-round: 20px;
+$border-outline: 2px solid grey;
+$straight-border: 0px;
+
+//
+.buttons-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.button {
+    padding: 10px 20px;
+    background-color: $default-background;
+    border: none;
+    color: white;
+    outline: none;
+    border-radius: 5px;
+    margin: 10px;
+
+    &:hover {
+        background-color: $default-background-hover;
+    }
+
+    &:active {
+        background-color: $default-background-active;
+    }
+
+    &-success {
+        background-color: $green-background;
+        
+        &:hover {
+            background-color: $green-background-hover;
+        } 
+        &:active {
+            background-color: $green-background-active;
+        }
+    }
+    &-info {
+        background-color:$yellow-background;
+
+        &:hover {
+            background-color: $yellow-background-hover;
+        }
+
+        &:active {
+            background-color: $yellow-background-active;
+        }
+    }
+    &-warning {
+        background-color: $red-background;
+
+        &:hover {
+            background-color: $red-background-hover;
+        }
+        &:active {
+            background-color: $red-background-active;
+        }
+    }
+
+    &-small {
+        font-size: $small-font;
+    }
+
+    &-medium {
+        font-size: $medium-font;
+    }
+
+    &-large {
+        font-size: $large-font;
+    }
+    &-rounded {
+        border-radius: $border-round;
+    }
+    &-outline {
+        border: $border-outline
+    }
+    &-straight {
+        border-radius: $straight-border;
+    }
+}

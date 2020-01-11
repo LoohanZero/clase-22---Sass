@@ -1,0 +1,50 @@
+.buttons-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.button {
+  padding: 10px 20px;
+  background-color: #3b3b55;
+  border: none;
+  color: white;
+  outline: none;
+  border-radius: 5px;
+  margin: 10px; }
+  .button:hover {
+    background-color: #4e4e66; }
+  .button:active {
+    background-color: #111119; }
+  .button-success {
+    background-color: darkgreen; }
+    .button-success:hover {
+      background-color: green; }
+    .button-success:active {
+      background-color: #003300; }
+  .button-info {
+    background-color: #cccc00; }
+    .button-info:hover {
+      background-color: #7f7f00; }
+    .button-info:active {
+      background-color: #e5e500; }
+  .button-warning {
+    background-color: darkred; }
+    .button-warning:hover {
+      background-color: #660000; }
+    .button-warning:active {
+      background-color: #FF0000; }
+  .button-small {
+    font-size: 11px; }
+  .button-medium {
+    font-size: 20px; }
+  .button-large {
+    font-size: 40px; }
+  .button-rounded {
+    border-radius: 20px; }
+  .button-outline {
+    border: 2px solid grey; }
+  .button-straight {
+    border-radius: 0px; }
+
+/*# sourceMappingURL=style.css.map */

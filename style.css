@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.main-header {
+  width: 25%;
+  background: linear-gradient(#f2959e, #ea7a90);
+  height: 100vh;
+  color: #f8ced7;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-header nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 50%;
+  width: 63%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.main-header nav .nav-links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+.main-header nav .nav-links:hover {
+  color: white;
+}
+
+.nav-links i {
+  margin: 15px;
+}
+
+.presentation {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  width: 63%;
+}
+.presentation img {
+  height: 70px;
+  border-radius: 50%;
+}
+.presentation .user h1 {
+  font-size: 14px;
+}
+.presentation .user p {
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.settings-option {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+.settings-option i {
+  margin: 15px;
+}
+.settings-option:hover {
+  color: white;
+}
+
+.main {
+  background: linear-gradient(to right bottom, #f3f4f8, #e0e0ea, #d4dae6);
+  color: #3b3b55;
+}
+
+.team-members {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.team-members header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 61%;
+  margin: 15px;
+  height: 40px;
+}
+.team-members header h2 {
+  font-size: 14px;
+  margin: 10px 0;
+}
+.team-members header p {
+  color: grey;
+  font-size: 12px;
+}
+.team-members .members-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.team-members .members-container p {
+  font-size: 12px;
+}
+.team-members .available-members {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.team-members .available-members h2 {
+  margin: 0;
+  color: #ea7a90;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 12px;
+}
+.team-members .available-members p {
+  margin: 10px 0;
+  color: #3b3b55;
+}
+.team-members .cards-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 63%;
+}
+
+.card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 15px;
+  height: 270px;
+  width: 220px;
+  box-sizing: border-box;
+}
+.card .img-left {
+  width: 80%;
+  height: 40%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.card .img-left img {
+  height: 50px;
+  border-radius: 50%;
+}
+.card .description {
+  width: 80%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.card .description h3 {
+  color: #ea7a90;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 4px;
+}
+.card .description .location {
+  color: grey;
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+/*# sourceMappingURL=style.css.map */

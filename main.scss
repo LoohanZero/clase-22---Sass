@@ -1,0 +1,240 @@
+//variables
+
+//background-color
+$sidebard-background: linear-gradient(#f2959e, #ea7a90);
+$main-background: linear-gradient(to right bottom, #f3f4f8, #e0e0ea, #d4dae6);
+$card-background: white;
+
+//font
+$font: 'Nunito Sans', sans-serif;
+$font-white: white;
+$font-pink: #f8ced7;
+$font-grey: grey;
+$font-dark: #3b3b55;
+$font-pinker: #ea7a90;
+$default-font-size: 14px;
+$default-letter-spacing: 2px;
+$card-letter-spacing: 4px;
+$smaller-font-size: 9px;
+$small-font-size: 12px;
+
+
+
+//sizing
+$default-height: 100vh;
+$sizing: 150px;
+$default-width: 63%;
+$card-height: 270px;
+$card-width: 220px;
+$card-box-width: 80%;
+$card-img-height: 40%;
+
+
+//MARGIN
+$icon-nav-margin: 15px;
+$section-margin: 15px;
+
+
+
+//mixins
+@mixin flexColumnCenter($justify-content:center, $align-items: center) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin flexCenter($justify-content:center, $align-items: center) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin imgIcon($sizing) {
+    height: $sizing;
+    border-radius: 50%;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    font-family: $font;
+
+}
+
+.main-header {
+    width: 25%;
+    background: $sidebard-background;
+    height: $default-height;
+    color: $font-pink;
+    font-size: $default-font-size;
+    
+
+    @include flexColumnCenter(space-around);
+
+    nav {
+        @include flexColumnCenter(space-around, flex-start);
+        height: 50%;
+        width: $default-width;
+        text-transform: uppercase;
+        letter-spacing: $default-letter-spacing;
+
+        .nav-links {
+            @include flexCenter(flex-start);
+            cursor: pointer;
+            &:hover {
+                color: $font-white;
+            }
+    
+        }
+        
+    }
+}
+.nav-links {
+    i {
+        margin: $icon-nav-margin;
+    }
+}
+.presentation {
+    @include flexCenter(space-evenly);
+    color: $font-white;
+    width: $default-width;
+
+
+    img {
+        @include imgIcon(70px);
+    }
+
+    .user {
+        h1 {
+            font-size: $default-font-size;
+        }
+
+        p {
+            text-transform: uppercase;
+            font-size: $smaller-font-size;
+            letter-spacing: $default-letter-spacing;
+        }
+    }
+}
+.nav-list {
+    @include flexColumnCenter(center, flex-start);
+}
+
+.settings-option {
+    @include flexCenter(flex-start);
+    cursor: pointer;
+    i {
+        margin: $icon-nav-margin;
+    }
+
+    &:hover {
+        color: $font-white;
+    }
+}
+
+.main {
+    background: $main-background;
+    color: $font-dark;
+}
+
+.team-members {
+    @include flexColumnCenter();
+
+    header {
+        @include flexCenter(space-between, center);
+        width: 61%;
+        margin: $section-margin;
+        height: 40px;
+
+        h2 {
+            font-size: $default-font-size;
+            margin: 10px 0;
+        }
+
+        p {
+            color: $font-grey;
+            font-size: $small-font-size;
+        }
+    }
+
+    .members-container {
+        @include flexColumnCenter(center, flex-start);
+
+        p {
+            font-size: $small-font-size;
+        }
+    }
+
+    .available-members {
+        @include flexColumnCenter(center, flex-end);
+
+        h2 {
+            margin: 0;
+            color: $font-pinker;
+            text-transform: uppercase;
+            letter-spacing: $card-letter-spacing;
+            font-size: $small-font-size;
+        }
+
+        p {
+            margin: 10px 0;
+            color: $font-dark;
+        }
+
+    }
+
+    .cards-container {
+        @include flexCenter(space-between);
+        flex-wrap: wrap;
+        width: $default-width;
+
+    }
+}
+
+.card {
+    background-color: $card-background;
+    @include flexColumnCenter(space-evenly);
+
+    margin: 15px;
+    height: $card-height;
+    width: $card-width;
+    box-sizing: border-box;
+
+    .img-left {
+        width: $card-box-width;
+        height: $card-img-height;
+        @include flexCenter(flex-start, center);
+
+        img {
+        @include imgIcon(50px);
+    
+    }
+}
+    .description {
+        width: $card-box-width;
+        height: 45%;
+        @include flexColumnCenter(flex-start, flex-start);
+        
+        h3 {
+            color: $font-pinker;
+            text-transform: uppercase;
+            font-size: $default-font-size;
+            letter-spacing: $card-letter-spacing;
+        }
+        .location {
+            color: $font-grey;
+            font-size: $small-font-size;
+            margin: 5px 0;
+        }
+    }
+
+    
+
+
+}
